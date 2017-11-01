@@ -10,10 +10,10 @@ class Riley implements Runnable {
         System.out.println("Created a Riley.");
     }
     public void run() {
-        System.out.println("about to run a thread in Riley");
+        //System.out.println("about to run a thread in Riley");
         try
         {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         }
         catch(InterruptedException iex)
         {

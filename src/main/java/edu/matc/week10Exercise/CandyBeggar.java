@@ -29,7 +29,7 @@ class CandyBeggar implements Runnable
     public void setInTime(Date inTime) {
 
         this.inTime = inTime;
-        System.out.println("A inTime is set for a CandyBeggar." + this.getName());
+        //System.out.println("A inTime is set for a CandyBeggar." + this.getName());
     }
 
     public void run()
