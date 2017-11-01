@@ -33,7 +33,7 @@ class HalloweenNight {
         long duration = 0;
         try {
             System.out.println("Giving candy to  : " + candyBeggar.getName());
-            duration = (long) (Math.random() * 10);
+            duration = (long) 3;
             TimeUnit.SECONDS.sleep(duration);
         } catch (InterruptedException iex) {
             iex.printStackTrace();

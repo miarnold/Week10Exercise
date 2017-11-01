@@ -20,8 +20,10 @@ class CandyBeggarCreator implements Runnable {
             System.out.println("thread in 'while true' of CandyBeggarCreator.");
             CandyBeggar candyBeggar = new CandyBeggar(halloweenNight);
             candyBeggar.setInTime(new Date());
+            System.out.print("will it continue");
 System.out.println("code reaches here.");
             Thread threadCandyBeggar = new Thread(candyBeggar);
+            //System.out.print(threadCandyBeggar);
 System.out.println("code won't get here.");
             candyBeggar.setName("CandyBeggar Thread "+threadCandyBeggar.getId());
             threadCandyBeggar.start();
@@ -29,7 +31,7 @@ System.out.println("code won't get here.");
 
             try
             {
-                TimeUnit.SECONDS.sleep((long)(Math.random()*10));
+                TimeUnit.SECONDS.sleep((long)3000);
             }
             catch(InterruptedException iex)
             {
